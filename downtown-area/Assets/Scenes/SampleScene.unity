@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 8
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -39,7 +39,6 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0.03639281, g: 0.025513887, b: 0.0116636, a: 1}
-  m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -55,10 +54,11 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 10
+    serializedVersion: 9
     m_Resolution: 2
     m_BakeResolution: 10
-    m_AtlasSize: 512
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
     m_AO: 0
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
@@ -2012,6 +2012,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 888b8345c0effb147be3aeabf18ad8ab, type: 2}
+    - target: {fileID: 100002, guid: 8985f95a38147314a81714b89432800e, type: 3}
+      propertyPath: m_Name
+      value: barandgrill
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8985f95a38147314a81714b89432800e, type: 3}
   m_IsPrefabParent: 0
@@ -2425,6 +2429,27 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 8985f95a38147314a81714b89432800e, type: 3}
   m_PrefabInternal: {fileID: 1656137956}
+--- !u!1 &2035395063 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: 8985f95a38147314a81714b89432800e, type: 3}
+  m_PrefabInternal: {fileID: 1656137956}
+--- !u!95 &2035395065
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2035395063}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fa9bc9b6f7dfa4e368ed5333a47b867e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &2050450579
 GameObject:
   m_ObjectHideFlags: 0
